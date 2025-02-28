@@ -33,7 +33,8 @@ preprocessor = ColumnTransformer(
 # Create a pipeline with preprocessing and SVM
 pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
-    ('classifier', SVC(probability=True))
+    ('classifier', SVC(probability=True, class_weight='balanced'))
+    # The class_weight parameter is added to balance the class weights
 ])
 
 # Define a simple hyperparameter grid

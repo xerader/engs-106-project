@@ -33,7 +33,8 @@ preprocessor = ColumnTransformer(
 # Create a pipeline with preprocessing and Random Forest
 pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
-    ('classifier', RandomForestClassifier(random_state=42))
+    ('classifier', RandomForestClassifier(random_state=42, class_weight='balanced'))
+    
 ])
 
 # Define a hyperparameter grid for Random Forest
