@@ -97,7 +97,7 @@ for i in range(min(10, len(feature_names))):
     print(f"{i+1}. {feature_names[idx]}: {coefficients[idx]:.4f}")
 
 # Plot ROC curve
-fpr, tpr, _ = roc_curve(y_test, y_pred_proba)
+fpr, tpr, _ = roc_curve(y_test, y_pred_proba, pos_label="yes")
 plt.figure(figsize=(8, 6))
 plt.plot(fpr, tpr, label=f'ROC curve (AUC = {roc_auc:.2f})')
 plt.plot([0, 1], [0, 1], 'k--')
