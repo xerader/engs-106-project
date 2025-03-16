@@ -112,6 +112,9 @@ for i in range(min(10, len(feature_names))):
     idx = sorted_indices[i]
     print(f"{i+1}. {feature_names[idx]}: {coefficients[idx]:.4f}")
 
+# Plot ROC curve
+fpr, tpr, _ = roc_curve(y_test, y_pred_proba, pos_label="yes")
+plt.figure(figsize=(8, 6))
 # Create a figure with multiple subplots for evaluation
 plt.figure(figsize=(20, 15))
 
