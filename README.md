@@ -1,11 +1,5 @@
 # engs-106-project
-
-Project for engs-106
-
-**Simple dataset + multiple ML models (SVM, RF, ResNet, Regression)**
-
-
-Objective: See how image classification algorithm works on non-image data. NeuralNetwork 
+The rapid proliferation of machine learning (ML) applications across diverse domains has highlighted the critical need for robust predictive models that perform effectively even under challenging data conditions. One of the most pervasive challenges in real-world data analysis is the issue of imbalanced datasets, where the distribution of classes is highly skewed. This imbalance often leads to biased model predictions, where the minority class, despite its potential importance, is frequently overlooked in favor of the majority class. The Bank Marketing dataset, available from the UCI Machine Learning Repository, provides an ideal testbed for exploring these challenges. This study utilizes bank telemarketing data, comprising 52,944 phone contacts from a Portuguese retail bank collected between May 2008 and June 2013. The dataset is imbalanced, with a 12.38\% success rate in selling long-term deposits. It includes 150 attributes, blending telemarketing, product, client, and socio-economic factors for comprehensive analysis.The inherent imbalance within the target classes makes this dataset particularly suitable for examining the effectiveness of various optimization techniques tailored to imbalanced data scenarios.   Our objective is to evaluate how different techniques work on neural network based model and non-neuron network based model. 
 
 
 
